@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WithsaltWebApiDemo</name>
+    </assembly>
+    <members>
+        <member name="T:WithsaltWebApiDemo.Controllers.v1.UserController">
+            <summary>
+            用户信息管理
+            </summary>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Controllers.v1.UserController.Get">
+            <summary>
+            获取全部用户信息
+            Get v1/user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Controllers.v1.UserController.Get(System.String)">
+            <summary>
+            更具ID获取用户信息
+            exp: GET: api/User/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Controllers.v1.UserController.Post(Demo.Model.UserInfo)">
+            <summary>
+            修改用户信息
+            exp: POST: api/User
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:WithsaltWebApiDemo.Controllers.v2.UserController">
+            <summary>
+            用户信息管理
+            </summary>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Controllers.v2.UserController.Get">
+            <summary>
+            获取全部用户信息
+            Get v1/user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Controllers.v2.UserController.Get(System.String)">
+            <summary>
+            更具ID获取用户信息
+            exp: GET: api/User/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Controllers.v2.UserController.Post(Demo.Model.UserInfo)">
+            <summary>
+            修改用户信息
+            exp: POST: api/User
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Logger.Log.Info(System.String,System.Exception)">
+            <summary>
+            普通日志
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Logger.Log.Warn(System.String,System.Exception)">
+            <summary>
+            告警日志
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:WithsaltWebApiDemo.Logger.Log.Error(System.String,System.Exception)">
+            <summary>
+            错误日志
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+    </members>
+</doc>

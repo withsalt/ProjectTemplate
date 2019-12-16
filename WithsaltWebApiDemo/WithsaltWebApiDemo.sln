@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithsaltWebApiDemo", "WithsaltWebApiDemo\WithsaltWebApiDemo.csproj", "{C8A5043B-8EA7-4F9D-88F6-130A58CFA113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Model", "Demo.Model\Demo.Model.csproj", "{DE564F42-4843-4727-A0C3-32B599133F25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8A5043B-8EA7-4F9D-88F6-130A58CFA113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A5043B-8EA7-4F9D-88F6-130A58CFA113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A5043B-8EA7-4F9D-88F6-130A58CFA113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A5043B-8EA7-4F9D-88F6-130A58CFA113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE564F42-4843-4727-A0C3-32B599133F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE564F42-4843-4727-A0C3-32B599133F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE564F42-4843-4727-A0C3-32B599133F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE564F42-4843-4727-A0C3-32B599133F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22B5749F-3228-479A-907D-28554F8775A8}
+	EndGlobalSection
+EndGlobal
