@@ -1,3 +1,4 @@
+using DotNetCore.CAP.Dashboard.NodeDiscovery;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -23,6 +24,23 @@ namespace WithSalt.Cap.Publisher
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string dbConnectionString = Configuration.GetValue<string>("ConnectionStrings:NpgsqlDbConnectionString");
+
+            services.AddCap(x =>
+            {
+                //配置数据库连接字符串
+                x.UsePostgreSql(dbConnectionString);
+                //CAP支持 RabbitMQ、Kafka、AzureServiceBus 等作为MQ，根据使用选择配置：
+                x.UseRabbitMQ(x =>
+                {
+                    x.HostName = Configuration.GetValue<string>("RabbitMQ:HostName");
+                    x.Port = Configuration.GetValue<int>("RabbitMQ:Port");
+                    x.UserName = Configuration.GetValue<string>("RabbitMQ:UserName");
+                    x.Password = Configuration.GetValue<string>("RabbitMQ:Password");
+                    x.VirtualHost = Configuration.GetValue<string>("RabbitMQ:VirtualHost");
+                });
+            });
+
             services.AddControllersWithViews();
         }
 
